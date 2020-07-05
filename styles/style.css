@@ -1,0 +1,264 @@
+/*
+   orange/yellow
+   #fd7f04
+   #ffbe01
+   #ff7b00
+   #ffc606
+
+   black
+   #0b0b0b
+   #090909
+   #252525
+   #444444
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oxygen&display=swap');
+
+
+body {
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  /* background-color: #B00159; */
+  font-family: 'Oxygen', serif ;
+  
+}
+
+
+
+#navbar {
+  display: flex;
+  
+  justify-content: flex-end;
+  width: 100%;
+  position: fixed;
+  background: linear-gradient(196deg, rgba(255,123,0,1) 0%, rgba(255,177,6,1) 50%, rgba(255,123,0,1) 100%);
+  box-shadow: 1px 1px 0.3px black;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 500px) {
+  #navbar {
+    justify-content: center;
+  }
+}
+
+
+#nav-list {
+  display: flex;
+  margin: 0 4px;
+}
+
+#nav-list a {
+  display: block;
+  font-size: 22px;
+  padding: 16px;
+  color: #ddd;
+}
+
+#nav-list a:hover {
+  background-color: black ;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(135deg, rgba(11,11,11,1) 0%, rgba(37,37,37,1) 50%, rgba(11,11,11,1) 100%);
+  text-align: center;
+  
+}
+
+#welcome-section > p {
+  color: #ff7b00;
+  font-style: italic;
+  font-size: 30px;
+  margin-top: -40px;
+  
+  
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  
+}
+
+img {
+  display: block;
+  align-self: center;
+  width: 100%;
+  height: 320px;
+  
+  
+}
+
+h1  {
+  font-family: 'Trade Winds', sans-serif ;
+  text-align: center;
+  font-size: 58px;
+  
+  
+}
+#projects-header {
+  text-align: center;
+  color: #FFCD00;
+  font-size: 32px;
+  margin: 0 auto 100px auto;
+  text-shadow: 1px 1px 2px black;
+}
+
+@media (max-width: 500px) {
+  #projects-header {
+    font-size: 26px;
+  }
+}
+
+
+#projects {
+  text-align: center;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(255,140,252,1) 0%, rgba(0,255,192,1) 100%);
+  padding: 100px 20px;
+}
+
+
+@media (max-width: 500px) {
+  #projects {
+    padding: 60px 0;
+  }
+}
+
+#projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 30px;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  
+}
+
+
+
+.project-title {
+  background: linear-gradient(135deg, rgba(11,11,11,1) 0%, rgba(37,37,37,1) 50%, rgba(11,11,11,1) 100%);
+  margin: 0;
+  padding: 15px;
+  color: #FFCD00;
+}
+
+
+
+.orange {
+  color: #ff7b00;
+}
+.black {
+  color: #777;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 30px;
+  color: #FFCD00;
+  /* text-shadow: 1px 1px 1px red; */
+  background: linear-gradient(135deg, rgba(22,22,22,1) 0%, rgba(37,37,37,1) 50%, rgba(22,22,22,1) 100%);
+  border-radius: 5px;
+  
+}
+
+#contact-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  
+  width: 100%;
+  height: 80vh;
+  flex-wrap: wrap;
+  background: linear-gradient(135deg, rgba(11,11,11,1) 0%, rgba(37,37,37,1) 50%, rgba(11,11,11,1) 100%);
+  
+}
+
+
+
+#contact-section-header > h2 {
+  font-size: 54px;
+  margin: 0;
+  color: #FFCD00;
+}
+
+
+@media (max-width: 500px) {
+  #contact-section-header > h2 {
+    font-size: 40px;
+  }
+}
+
+
+#contact-section-header > p {
+  font-size: 24px;
+  
+}
+
+@media (max-width: 500px) {
+  #contact-section-header > p {
+    font-size: 18px;
+  }
+}
+
+
+
+
+#contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-size:  20px;
+  padding: 15px;
+  margin-top: 30px;
+}
+
+#contact-links > a {
+  padding: 30px;
+  color: white;
+}
+
+
+@media (max-width:500px) {
+  #contact-links {
+    flex-direction: column;
+    padding: 5px;
+    margin: 5px;
+  }
+  
+  #contact-links > a {
+    padding: 5px;
+  }
+}
+
+
+#footer  {
+  display: flex;
+  height: 11vh;
+  width: 100%;
+  background: linear-gradient(196deg, rgba(255,123,0,1) 0%, rgba(255,177,6,1) 50%, rgba(255,123,0,1) 100%);
+  justify-content: center;
+  text-align: center;
+  padding: 5px;
+}
+
+
+
+
+
+
